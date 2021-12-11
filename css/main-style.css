@@ -61,7 +61,7 @@
 @media screen and (max-width: 767px) {
   .nav_menu {
     position: fixed;
-    bottom: 0;
+    bottom: -100%;
     left: 0;
     width: 100%;
     background: #fbfbfe;
@@ -108,6 +108,19 @@
   position: absolute;
   right: 1.3rem;
   bottom: .5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #6e57e0;
+}
+
+.nav_close:hover {
+  color: #5a43cb;
+}
+
+.show_menu {
+  bottom: 0;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 /*==================== BASE ====================*/
