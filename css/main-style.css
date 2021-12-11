@@ -1,0 +1,106 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*========== Colors ==========*/
+/* Change favorite color */
+/*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+/* HSL color mode */
+/*========== Font and typography ==========*/
+/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+/*========== Font weight ==========*/
+/*========== Margin Bottom ==========*/
+/* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+/*========== z index ==========*/
+/* Font size for large devices */
+.dark_theme {
+  /* HSL color mode */
+}
+
+/*==================== BASE ====================*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, .dark_theme {
+  margin: 0 0 3rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+  background-color: hsl(var(--hue-color), 60%, 99%);
+  color: hsl(var(--hue-color), 8%, 45%);
+}
+
+h1, h2, h3, h4 {
+  color: hsl(var(--hue-color), 8%, 15%);
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section_title {
+  font-size: 1.5rem;
+}
+
+.section_subtitle {
+  display: block;
+  font-size: 0.813rem;
+  margin-bottom: 3rem;
+}
+
+.section_title, .section_subtitle {
+  text-align: center;
+}
+
+/*==================== LAYOUT ====================*/
+.container {
+  max-width: 768px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: hsl(var(--hue-color), 60%, 99%);
+}
+/*# sourceMappingURL=main-style.css.map */
