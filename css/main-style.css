@@ -243,6 +243,30 @@
           align-items: center;
 }
 
+.about_img {
+  width: 200px;
+  border-radius: .5rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.about_description {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.about_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /*==================== BASE ====================*/
 * {
   padding: 0;
