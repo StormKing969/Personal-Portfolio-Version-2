@@ -123,6 +123,126 @@
   transition: all .3s ease-in;
 }
 
+.home_container {
+  gap: 1rem;
+}
+
+.home_content {
+  -ms-grid-columns: .5fr 3fr;
+      grid-template-columns: .5fr 3fr;
+  padding-top: 3.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home_social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content;
+      grid-template-columns: -webkit-max-content;
+      grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+
+.home_social-icon {
+  font-size: 1.25rem;
+  color: #6e57e0;
+}
+
+.home_social-icon:hover {
+  color: #5a43cb;
+}
+
+.home_blob {
+  width: 250px;
+  fill: #6e57e0;
+}
+
+.home_blob-img {
+  width: 170px;
+}
+
+.home_data {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.home_title {
+  font-size: 2rem;
+}
+
+.home_subtitle {
+  font-size: 1.125rem;
+  color: #6d6a7c;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.home_description {
+  margin-bottom: 2rem;
+}
+
+.home_scroll {
+  display: none;
+}
+
+.home_scroll-button {
+  color: #6e57e0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.home_scroll-button:hover {
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+}
+
+.home_scroll-mouse {
+  font-size: 2rem;
+}
+
+.home_scroll-name {
+  font-size: 0.813rem;
+  color: #242329;
+  font-weight: 500;
+  margin-right: 0.25rem;
+}
+
+.home_scroll-arrow {
+  font-size: 1.25rem;
+}
+
+.button {
+  display: inline-block;
+  background: #6e57e0;
+  color: #FFF;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: 500;
+}
+
+.button:hover {
+  background: #5a43cb;
+}
+
+.button_icon {
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.button_flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /*==================== BASE ====================*/
 * {
   padding: 0;
