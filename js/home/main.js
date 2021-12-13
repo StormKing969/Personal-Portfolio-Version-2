@@ -16,9 +16,25 @@ if(navClose) {
     })
 }
 
-// Rmove menu when a selection is made
+// Remove menu when a selection is made
 const navLink = $(".nav_link");
 
 navLink.click(e => {
     navMenu.removeClass("show_menu");
 });
+
+
+function toggleSkills(clicked) {
+    
+    var classes = clicked.className;
+    var classID = clicked[0];
+
+    console.log(clicked)
+    console.log(classes)
+    console.log(classID)
+    if("skills_content skills_close" === classes) {
+
+        clicked.removeClass("skills_close");
+        clicked.addClass("skills_open");
+    }
+}
