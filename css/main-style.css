@@ -366,6 +366,74 @@
           transform: rotate(-180deg);
 }
 
+.qualification_tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.qualification_button {
+  font-size: 0.938rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.qualification_button:hover {
+  color: #6e57e0;
+}
+
+.qualification_icon {
+  font-size: 1.3rem;
+  margin-right: 0.1rem;
+}
+
+.qualification_data {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr max-content 1fr;
+      grid-template-columns: 1fr -webkit-max-content 1fr;
+      grid-template-columns: 1fr max-content 1fr;
+  -webkit-column-gap: 1.3rem;
+          column-gap: 1.3rem;
+}
+
+.qualification_title {
+  font-size: 0.938rem;
+  font-weight: 500;
+}
+
+.qualification_subtitle {
+  display: inline-block;
+  font-size: 0.813rem;
+  margin-bottom: 1rem;
+}
+
+.qualification_calendar {
+  font-size: 0.75rem;
+  color: #a19fad;
+}
+
+.qualification_rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background: #6e57e0;
+  border-radius: 50%;
+}
+
+.qualification_line {
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: #6e57e0;
+  -webkit-transform: translate(6px, -7px);
+          transform: translate(6px, -7px);
+}
+
 /*==================== BASE ====================*/
 * {
   padding: 0;

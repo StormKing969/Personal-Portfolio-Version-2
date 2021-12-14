@@ -24,17 +24,19 @@ navLink.click(e => {
 });
 
 
-function toggleSkills(clicked) {
+function toggleSkills(chosen) {
+    var choseClassID = chosen.id;
+    var choseClassName = chosen.className;
     
-    var classes = clicked.className;
-    var classID = clicked[0];
+    // console.log(choseClassID)
+    // console.log(choseClassName)
+    if(choseClassName === "skills_content skills_close") {
+        $("#" + choseClassID).removeClass("skills_close");
+        $("#" + choseClassID).addClass("skills_open");
+    }
 
-    console.log(clicked)
-    console.log(classes)
-    console.log(classID)
-    if("skills_content skills_close" === classes) {
-
-        clicked.removeClass("skills_close");
-        clicked.addClass("skills_open");
+    if(choseClassName === "skills_content skills_open") {
+        $("#" + choseClassID).removeClass("skills_open");
+        $("#" + choseClassID).addClass("skills_close");
     }
 }
