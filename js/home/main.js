@@ -42,18 +42,19 @@ function toggleSkills(chosen) {
     }
 }
 
-const tabs = $("[data-target]");
-const tabContents = $("[data-content]");
+// TO DO
+// const tabs = $("[data-target]");
+// const tabContents = $("[data-content]");
 
-// console.log(tabContents[0].dataset)
-// console.log(tabs[0].dataset.target)
+// // console.log(tabContents[0].dataset)
+// // console.log(tabs[0].dataset)
 
-$.each(tabs , e => {  
-    console.log(("" + tabs[e].dataset.target));
-    $("" + tabs[e].dataset.target).click(e => {
-        console.log("hi")
-    });
-  });  
+// $.each(tabs , e => {  
+//     // console.log((tabs[e].dataset.target));
+//     $("" + tabs[e].className).click(e => {
+//         console.log("hi")
+//     });
+//   });  
 
 // const tabs = document.querySelectorAll('[data-target]'),
 //   tabContents = document.querySelectorAll('[data-content]')
