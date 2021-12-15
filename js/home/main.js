@@ -24,6 +24,7 @@ navLink.click(e => {
 });
 
 
+// Open & close skill tabs
 function toggleSkills(chosen) {
     var choseClassID = chosen.id;
     var choseClassName = chosen.className;
@@ -40,3 +41,35 @@ function toggleSkills(chosen) {
         $("#" + choseClassID).addClass("skills_close");
     }
 }
+
+const tabs = $("[data-target]");
+const tabContents = $("[data-content]");
+
+// console.log(tabContents[0].dataset)
+// console.log(tabs[0].dataset.target)
+
+$.each(tabs , e => {  
+    console.log(("" + tabs[e].dataset.target));
+    $("" + tabs[e].dataset.target).click(e => {
+        console.log("hi")
+    });
+  });  
+
+// const tabs = document.querySelectorAll('[data-target]'),
+//   tabContents = document.querySelectorAll('[data-content]')
+
+// tabs.forEach(tab => {
+//   tab.addEventListener('click', () => {
+//     const target = document.querySelector(tab.dataset.target)
+
+//     tabContents.forEach(tabContent => {
+//       tabContent.classList.remove('qualification_active')
+//     })
+//     target.classList.add('qualification_active')
+
+//     tabs.forEach(tab => {
+//       tab.classList.remove('qualification_active')
+//     })
+//     tab.classList.add('qualification_active')
+//   })
+// })

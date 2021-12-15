@@ -34,6 +34,7 @@
     display: inline-block;
     font-size: $small-font-size;
     margin-bottom: $mb-1;
+    color: $text-color;
 }
 
 .qualification_calendar {
@@ -55,4 +56,16 @@
     height: 100%;
     background: $first-color;
     transform: translate(6px, -7px);
+}
+
+.qualification [data-content] {
+    display: none;
+}
+
+.qualification_active[data-content] {
+    display: block;
+}
+
+.qualification_active {
+    color: $first-color;
 }

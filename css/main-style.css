@@ -410,6 +410,7 @@
   display: inline-block;
   font-size: 0.813rem;
   margin-bottom: 1rem;
+  color: #6d6a7c;
 }
 
 .qualification_calendar {
@@ -432,6 +433,18 @@
   background: #6e57e0;
   -webkit-transform: translate(6px, -7px);
           transform: translate(6px, -7px);
+}
+
+.qualification [data-content] {
+  display: none;
+}
+
+.qualification_active[data-content] {
+  display: block;
+}
+
+.qualification_active {
+  color: #6e57e0;
 }
 
 /*==================== BASE ====================*/
