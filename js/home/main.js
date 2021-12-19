@@ -74,3 +74,24 @@ tabs.forEach(tab => {
     tab.classList.add('qualification_active')
   })
 })
+
+
+// Portfolio slider from SwiperJS
+let swiper = new Swiper(".portfolio_container", {
+  effect: "coverflow",
+  loop: true,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
