@@ -77,7 +77,7 @@ tabs.forEach(tab => {
 
 
 // Portfolio slider from SwiperJS
-let swiper = new Swiper(".portfolio_container", {
+let swiperPortfolio = new Swiper(".portfolio_container", {
   effect: "coverflow",
   loop: true,
   grabCursor: true,
@@ -93,5 +93,23 @@ let swiper = new Swiper(".portfolio_container", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+});
+
+// // Testimonial slider from SwiperJS
+let swiperTestimonial = new Swiper(".testimonial_container", {
+  effect: "cube",
+  loop: true,
+  grabCursor: true,
+  cubeEffect: {
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.9,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
   },
 });

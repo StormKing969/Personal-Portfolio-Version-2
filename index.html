@@ -962,10 +962,10 @@
             <h2 class="section_title">Testimonial</h2>
             <span class="section_subtitle">Feedback from colleagues</span>
 
-            <div class="testimonial_container container">
-                <div>
+            <div class="testimonial_container container swiper">
+                <div class="swiper-wrapper">
                     <!--==================== FEEDBACK 1 ====================-->
-                    <div class="testimonial_content">
+                    <div class="testimonial_content swiper-slide">
                         <div class="testimonial_data">
                             <div class="testimonial_header">
                                 <img src="./images/testimonial/testimonial1.jpg" alt="" class="testimonial_img">
@@ -983,7 +983,7 @@
                     </div>
 
                     <!--==================== FEEDBACK 2 ====================-->
-                    <div class="testimonial_content">
+                    <div class="testimonial_content swiper-slide">
                         <div class="testimonial_data">
                             <div class="testimonial_header">
                                 <img src="./images/testimonial/testimonial2.jpg" alt="" class="testimonial_img">
@@ -999,6 +999,60 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- Swiper Pagination -->
+                <div class="swiper-pagination swiper-pagination-testimonial"></div>
+            </div>
+        </section>
+
+        <!--==================== Contact Me ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section_title">Contact Me</h2>
+            <span class="section_subtitle">Get in touch</span>
+
+            <div class="contact_container container grid">
+                <div>
+                    <div class="contact_information">
+                        <i class="uil uil-phone-alt contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Call Me</h3>
+                            <span class="contact_subtitle">(508) 367-4447</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="uil uil-envelope contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Email</h3>
+                            <span class="contact_subtitle">wijesinghesaj@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact_form grid">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Name</label>
+                            <input type="text" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Email</label>
+                            <input type="email" class="contact_input">
+                        </div>
+                    </div>
+                    <div class="contact_content">
+                        <label for="" class="contact_label">Message</label>
+                        <textarea name="" id="" cols="0" rows="10" class="contact_input"></textarea>
+                    </div>
+                    <div>
+                        <a href="#" class="button button_flex">
+                            Send Message
+                            <i class="uil uil-message button_icon"></i>
+                        </a>
+                    </div>
+                </form>
             </div>
         </section>
 
