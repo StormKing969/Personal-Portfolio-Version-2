@@ -490,13 +490,17 @@
   margin-bottom: 0.75rem;
 }
 
+.portfolio_button {
+  margin: 0 0 3rem;
+}
+
 .portfolio_button:hover .button_icon {
   -webkit-transform: translateX(0.25rem);
           transform: translateX(0.25rem);
 }
 
 .portfolio_container .swiper-pagination-bullets {
-  bottom: -.2rem;
+  bottom: 0;
 }
 
 .swiper-pagination-bullet-active {
@@ -855,8 +859,8 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .swiper-pagination-horizontal.swiper-pagination-bullets {
-    display: none;
+  .portfolio_img {
+    margin: auto 0 4rem;
   }
 }
 

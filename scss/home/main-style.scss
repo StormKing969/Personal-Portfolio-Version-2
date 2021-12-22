@@ -208,11 +208,8 @@ img {
         justify-content: center;
     }
 
-    .swiper-pagination-horizontal {
-
-        &.swiper-pagination-bullets {
-            display: none;
-        }
+    .portfolio_img {
+        margin: auto 0 4rem;
     }
 }
 

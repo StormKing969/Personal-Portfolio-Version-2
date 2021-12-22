@@ -23,6 +23,7 @@
 }
 
 .portfolio_button {
+    margin: 0 0 3rem;
 
     &:hover {
 
@@ -35,7 +36,7 @@
 .portfolio_container {
 
     .swiper-pagination-bullets {
-        bottom: -.2rem;
+        bottom: 0;
     }
 }
 
