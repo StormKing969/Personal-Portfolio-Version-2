@@ -1,5 +1,5 @@
 .portfolio_container {
-    overflow: initial;
+    overflow: hidden;
 }
 
 .portfolio_content {
@@ -32,10 +32,10 @@
     }
 }
 
-.swiper-pagination-horizontal {
+.portfolio_container {
 
-    &.swiper-pagination-bullets {
-        bottom: -2.5rem;
+    .swiper-pagination-bullets {
+        bottom: -.2rem;
     }
 }
 

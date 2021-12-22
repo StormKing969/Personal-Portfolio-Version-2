@@ -50,7 +50,7 @@
 }
 
 .nav_list {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
 }
 
@@ -88,4 +88,21 @@
 .show_menu {
     bottom: 0;
     transition: all .3s ease-in;
+}
+
+// Theme Button
+.nav_btns {
+    display: flex;
+    align-items: center;
+}
+
+.change_theme {
+    font-size: 1.25rem;
+    color: $title-color;
+    margin-right: $mb-1;
+    cursor: pointer;
+
+    &:hover {
+        color: $first-color;
+    }
 }

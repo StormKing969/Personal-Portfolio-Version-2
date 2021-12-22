@@ -96,7 +96,7 @@ let swiperPortfolio = new Swiper(".portfolio_container", {
   },
 });
 
-// // Testimonial slider from SwiperJS
+// Testimonial slider from SwiperJS
 let swiperTestimonial = new Swiper(".testimonial_container", {
   effect: "cube",
   loop: true,
@@ -112,4 +112,57 @@ let swiperTestimonial = new Swiper(".testimonial_container", {
     clickable: true,
     dynamicBullets: true,
   },
+});
+
+// Color the menu 
+$(document).scroll(function () {
+  $('section').each(function () {
+      if($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(this).outerHeight()-50) > $(document).scrollTop()) {
+        $(".nav_" + $(this).attr('id')).addClass("active_link");
+      } else {
+        $(".nav_" + $(this).attr('id')).removeClass("active_link");
+      }
+  });
+});
+
+// const sections = document.querySelectorAll('section[id]')
+
+
+// function scrollActive(){
+//     const scrollY = window.pageYOffset
+
+//     sections.forEach(current =>{
+//         console.log(current)
+//         const sectionHeight = current.offsetHeight
+//         const sectionTop = current.offsetTop - 50;
+//         sectionId = current.getAttribute('id')
+
+//         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+//         }else{
+//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+//         }
+//     })
+// }
+// window.addEventListener('scroll', scrollActive)
+
+// Add some shadow to the top of the navbar
+const nav = $("header");
+const scrollIcon = $("#scroll-up");
+
+$(window).scroll(e =>  {
+  if(this.scrollY >= 90) {
+    nav.addClass("scroll_header");
+  } else {
+    nav.removeClass("scroll_header");
+  }
+});
+
+// Show up arrow after scroll a bit
+$(window).scroll(e =>  {
+  if(this.scrollY >= 560) {
+    scrollIcon.addClass("show_scrollUp");
+  } else {
+    scrollIcon.removeClass("show_scrollUp");
+  }
 });
