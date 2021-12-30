@@ -528,6 +528,11 @@
   bottom: -1.5rem;
 }
 
+button {
+  border: none;
+  background: none;
+}
+
 .contact_container {
   row-gap: 3rem;
 }
