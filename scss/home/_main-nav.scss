@@ -90,19 +90,19 @@
     transition: all .3s ease-in;
 }
 
-// Theme Button
-.nav_btns {
-    display: flex;
-    align-items: center;
-}
+// // Theme Button
+// .nav_btns {
+//     display: flex;
+//     align-items: center;
+// }
 
-.change_theme {
-    font-size: 1.25rem;
-    color: $title-color;
-    margin-right: $mb-1;
-    cursor: pointer;
+// .change_theme {
+//     font-size: 1.25rem;
+//     color: $title-color;
+//     margin-right: $mb-1;
+//     cursor: pointer;
 
-    &:hover {
-        color: $first-color;
-    }
-}
+//     &:hover {
+//         color: $first-color;
+//     }
+// }
